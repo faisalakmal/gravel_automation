@@ -1,11 +1,11 @@
 
 const Page = require('./page');
 
-class HomePage extends Page {
+class InspirasiPage extends Page {
     
-    get btnGabungSekarang () {
-        return $('//button[contains(text(),"Daftar Sekarang")]');
+    get searchInspirasi () {
+        return $('//input[@id="outlined-adornment-weight"]')
     }
 }
 
-module.exports = new HomePage();
+module.exports = new InspirasiPage();

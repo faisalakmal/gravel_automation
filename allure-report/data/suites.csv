@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Sep 26 23:59:03 WIB 2022","Mon Sep 26 23:59:05 WIB 2022","2076","","Gravel Home Page","","Gravel Home Page","should be open the Gravel home page","should be open the Gravel home page",""
+"passed","Mon Sep 26 23:59:08 WIB 2022","Mon Sep 26 23:59:11 WIB 2022","2940","","Gravel Home Page","","Gravel Home Page","should be open the Karir page","should be open the Karir page",""
+"passed","Mon Sep 26 23:59:08 WIB 2022","Mon Sep 26 23:59:08 WIB 2022","296","","Gravel Home Page","","Gravel Home Page","should be open the Inspirasi page","should be open the Inspirasi page",""
+"passed","Mon Sep 26 23:59:11 WIB 2022","Mon Sep 26 23:59:12 WIB 2022","584","","Gravel Home Page","","Gravel Home Page","should be open the Playtore page","should be open the Playtore page",""
+"passed","Mon Sep 26 23:59:12 WIB 2022","Mon Sep 26 23:59:15 WIB 2022","2976","","Gravel Home Page","","Gravel Home Page","should be open the Appstore page","should be open the Appstore page",""
+"passed","Mon Sep 26 23:59:15 WIB 2022","Mon Sep 26 23:59:23 WIB 2022","8111","","Gravel Home Page","","Gravel Home Page","should be change the language into english","should be change the language into english",""
+"passed","Mon Sep 26 23:59:05 WIB 2022","Mon Sep 26 23:59:08 WIB 2022","3146","","Gravel Home Page","","Gravel Home Page","should be open the Gabung Jadi Mitra page","should be open the Gabung Jadi Mitra page",""

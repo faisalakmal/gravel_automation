@@ -1,45 +1,44 @@
 
 const allureReporter = require('@wdio/allure-reporter').default
-const page = require('../pageobjects/page');
-const homePage = require('../pageobjects/home.page');
-const stepHomePage = require('../stepdefinition/home.page');
+const page_homePage = require('../pageobjects/home.page');
+const step_homePage = require('../stepdefinition/home.page');
+const step_inspirasiPage = require('../stepdefinition/inspirasi.page')
 
 describe('Gravel Home Page', () => {
-    // beforeEach(async () => {
-    //     await browser.maximizeWindow();
-    // });
-
-    it.only('should be open the Gravel home page and verify the title', async () => {
-        await homePage.open();
-        await browser.pause(1000);
-        await expect(homePage.titleGravel).toHaveTitle('Gravel - Tukang Proyek Mudah & Aman');
+    before(async () => {
+        await browser.maximizeWindow();
+        await page_homePage.open();
     });
 
-    it.only('should be open the Gabung Jadi Mitra page and verify the url', async () => {
-        await stepHomePage.menuGabungMitra();
-        const paramUrl = await browser.getUrl();
-        console.log(paramUrl)
-
-        await expect(homePage.open('mitra')).toHaveUrlContaining('mitra');
-        // await expect(homePage.open).toHaveUrlContaining('/mitra')
+    it('should be open the Gravel home page', async () => {
+        await step_homePage.menuHome();
     });
 
-    it('should be open the Inspirasi page and verify the url', async () => {
-        await stepHomePage.menuInspirasi();
-
-        await browser.pause(1000);
+    it('should be open the Gabung Jadi Mitra page', async () => {
+        await step_homePage.menuGabungMitra();
     });
 
-    it('should be open the Karir page and verify the url', async () => {
-        await stepHomePage.menuKarir();
-
-        await browser.switchWindow('');
-        await browser.pause(2500);
+    it('should be open the Inspirasi page', async () => {
+        await step_homePage.menuInspirasi();
+        await step_inspirasiPage.searchInspirasi();
     });
 
-    it.skip('should be change the language into english and verify it', async () => {
-        await homePage();
-    })
+    it('should be open the Karir page', async () => {
+        await step_homePage.menuKarir();
+    });
+
+    it('should be open the Playtore page', async () => {
+        await step_homePage.menuPlayStore();
+    });
+
+    it('should be open the Appstore page', async () => {
+        await step_homePage.menuAppStore();
+    });
+
+    it('should be change the language into english', async () => {
+        await step_homePage.changeToEn();
+        await browser.pause(5000)
+    });
 
     allureReporter.addFeature('Feature');
 });

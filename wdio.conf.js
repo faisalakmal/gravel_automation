@@ -24,8 +24,8 @@ exports.config = {
         './test/specs/**/*.js'
     ],
     suites: {
-        login: [
-            './test/specs/**/home.js'
+        home: [
+            './test/specs/home.js'
         ]
     },
     // Patterns to exclude.

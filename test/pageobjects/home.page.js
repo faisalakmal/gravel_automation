@@ -20,21 +20,24 @@ class HomePage extends Page {
     }
 
     get btnPlayStore () {
-        return $('//a[normalize-space()="Play Store"]');
+        return $('//div[@class="desktop"]//a[1]');
     }
 
     get btnAppStore () {
-        return $('//a[normalize-space()="App Store"]');
+        return $('//div[@class="desktop"]//a[2]');
     }
 
     get btnLanguage () {
         return $('//div[@aria-label="Without label" and .="ID"]');
     }
 
-    /**
-    button //div[@aria-label='Without label' and .='ID']
-    pilihan //li[@role='option']//a[normalize-space()='ID']
-    **/
+    get ddLanguageId () {
+        return $('//li[@role="option"]//a[normalize-space()="ID"]')
+    }
+
+    get ddLanguageEn () {
+        return $('//li[@role="option"]//a[normalize-space()="EN"]')
+    }
 
     /**
      * overwrite specific options to adapt it to page object
