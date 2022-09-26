@@ -7,4 +7,8 @@ module.exports = class Page {
     open (path) {
         return browser.url(`https://gravel.co.id/${path}`)
     }
+
+    career (path) {
+        return browser.url(`https://careers.smartrecruiters.com/${path}`)
+    }
 }

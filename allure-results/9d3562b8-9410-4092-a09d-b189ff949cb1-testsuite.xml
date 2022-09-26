@@ -1,0 +1,128 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1664187987360' stop='1664187994512'>
+    <name>Gravel Home Page</name>
+    <title>Gravel Home Page</title>
+    <test-cases>
+        <test-case start='1664187987360' status='passed' stop='1664187991135'>
+            <name>should be open the Gravel home page and verify the title</name>
+            <title>should be open the Gravel home page and verify the title</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1664187987363' status='passed' stop='1664187987899'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='abce3258-e495-400b-9810-81d385d1156b-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664187987900' status='passed' stop='1664187991128'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='a677ad61-51de-4d09-b3ac-14adea06946b-attachment.json' type='application/json' size='36'/>
+                        <attachment title='Response' source='3b9fbbe7-cb4d-4527-9ce7-b26a72388147-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps>
+                        <step start='1664187988927' status='passed' stop='1664187991121'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='b310e0b6-a979-44e4-ba42-f8e97b95373d-attachment.json' type='application/json' size='44'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1664187991131' status='passed' stop='1664187991134'>
+                    <name>GET /session/:sessionId/title</name>
+                    <title>GET /session/:sessionId/title</title>
+                    <attachments>
+                        <attachment title='Response' source='33790343-12b0-499e-a580-0d9b1f3ebdce-attachment.json' type='application/json' size='37'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1664187991135' status='broken' stop='1664187994511'>
+            <name>should be open the Gabung Jadi Mitra page and verify the url</name>
+            <title>should be open the Gabung Jadi Mitra page and verify the url</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.125'/>
+            </parameters>
+            <steps>
+                <step start='1664187991136' status='passed' stop='1664187991243'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='20116f33-ab8c-4cdd-92d6-7df7cc0761dc-attachment.json' type='application/json' size='57'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1664187991244' status='passed' stop='1664187992471'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='e8c1eab8-63df-4e48-bca7-822a13162a8c-attachment.json' type='application/json' size='36'/>
+                        <attachment title='Response' source='cdded744-9c2f-48fb-9050-9a09beae96c6-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps>
+                        <step start='1664187991245' status='passed' stop='1664187992465'>
+                            <name>POST /session/:sessionId/element</name>
+                            <title>POST /session/:sessionId/element</title>
+                            <attachments>
+                                <attachment title='Request' source='81fdd849-462c-423a-b9ec-50646be1aabc-attachment.json' type='application/json' size='95'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1664187992474' status='passed' stop='1664187992557'>
+                    <name>POST /session/:sessionId/element/bef9cf4a-1c1f-4d26-b7c9-5c2b04c32e48/click</name>
+                    <title>POST /session/:sessionId/element/bef9cf4a-1c1f-4d26-b7c9-5c2b04c32e48/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1664187992557' status='passed' stop='1664187994509'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='cfa1d024-ef8f-4a89-9ccc-aec45286a634-attachment.json' type='application/json' size='36'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of null (reading 'pass')</message>
+                <stack-trace>TypeError: Cannot read properties of null (reading 'pass')
+                    at _validateResult (/Users/faisalakmal/Documents/Gravel Automation/webdriverio/node_modules/expect/build/index.js:390:19)
+                    at processResult (/Users/faisalakmal/Documents/Gravel Automation/webdriverio/node_modules/expect/build/index.js:287:7)
+                    at /Users/faisalakmal/Documents/Gravel Automation/webdriverio/node_modules/expect/build/index.js:358:28
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async Context.&lt;anonymous> (/Users/faisalakmal/Documents/Gravel Automation/webdriverio/test/specs/home.js:20:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

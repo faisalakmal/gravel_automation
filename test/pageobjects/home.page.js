@@ -19,9 +19,22 @@ class HomePage extends Page {
         return $('//div[@class="css-s5dbyh"]//a[contains(@href, "careers")]');
     }
 
-    // async gabungMitra () {
-    //     await this.btnGabungMitra.click();
-    // }
+    get btnPlayStore () {
+        return $('//a[normalize-space()="Play Store"]');
+    }
+
+    get btnAppStore () {
+        return $('//a[normalize-space()="App Store"]');
+    }
+
+    get btnLanguage () {
+        return $('//div[@aria-label="Without label" and .="ID"]');
+    }
+
+    /**
+    button //div[@aria-label='Without label' and .='ID']
+    pilihan //li[@role='option']//a[normalize-space()='ID']
+    **/
 
     /**
      * overwrite specific options to adapt it to page object
