@@ -6,3 +6,6 @@ run selected tests
 
 run exclude selected test
 "npx wdio run wdio.conf.js --exclude ./test/specs/{file_test_name}"
+
+generate reports
+"allure generate --clean && allure open"
